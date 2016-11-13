@@ -40,6 +40,7 @@ export PS1="$BRIGHT_GREEN\T$END_COLOR $BRIGHT_YELLOW\!$END_COLOR $BRIGHT_BLUE\W$
 # ------------------------------------------------------------
 export PATH="$PATH:/usr/local/bin/"
 export PATH="/usr/local/git/bin:/sw/bin/:/usr/local/bin:/usr/local/:/usr/local/sbin:/usr/local/mysql/bin:$PATH"
+export PYTHONPATH="$PYTHONPATH:/usr/local/Cellar/apache-spark/1.6.2/libexec/python:/usr/local/Cellar/apache-spark/1.6.2:/usr/local/Cellar/apache-spark/1.6.2/libexec/python/lib/py4j-0.9-src.zip"
 
 # Set Default Editor (change 'emacs' to the editor of your choice)
 # ------------------------------------------------------------
@@ -311,3 +312,5 @@ httpDebug () { /usr/bin/curl $@ -o /dev/null -w "dns: %{time_namelookup} connect
 # \]  End a sequence of non-printing characters
 
 # PS2 is called the secondary prompt string; its default value is >. It is used when you type an incomplete line and hit RETURN, as an indication that you must finish your command.
+
+test -e "${HOME}/.iterm2_shell_integration.bash" && source "${HOME}/.iterm2_shell_integration.bash"
