@@ -41,6 +41,11 @@ export PS1="$BRIGHT_GREEN\T$END_COLOR $BRIGHT_YELLOW\!$END_COLOR $BRIGHT_BLUE\W$
 export PATH="$PATH:/usr/local/bin/"
 export PATH="/usr/local/git/bin:/sw/bin/:/usr/local/bin:/usr/local/:/usr/local/sbin:/usr/local/mysql/bin:$PATH"
 export PYTHONPATH="$PYTHONPATH:/usr/local/Cellar/apache-spark/1.6.2/libexec/python:/usr/local/Cellar/apache-spark/1.6.2:/usr/local/Cellar/apache-spark/1.6.2/libexec/python/lib/py4j-0.9-src.zip"
+export LIBRARY_SEARCH_PATHS=/usr/local/lib
+export LIBRARY_PATH=/usr/local/lib
+export HEADER_SEARCH_PATHS=/usr/local/include
+export C_INCLUDE_PATH=/usr/local/include
+export CPLUS_INCLUDE_PATH=/usr/local/include
 
 # Set Default Editor (change 'emacs' to the editor of your choice)
 # ------------------------------------------------------------
